@@ -95,14 +95,14 @@ const SignUp = () => {
   ];
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-[url(./auth/bg_img.png)] p-6">
-      <div className="bg-white shadow-lg rounded-lg flex w-full max-w-3xl max-h-[90vh] p-6 gap-6">
+    <div className="flex justify-center items-center bg-[url(./auth/bg_img.png)] p-6 min-h-screen">
+      <div className="flex gap-6 bg-white shadow-lg p-6 rounded-lg w-full max-w-3xl max-h-[90vh]">
         {/* Left Side - Image */}
-        <div className="w-1/2 hidden md:flex items-center justify-center bg-purple-200 p-4 bg-[url(./auth/img2.svg)] bg-cover bg-center rounded-2xl">
+        <div className="hidden md:flex justify-center items-center bg-[url(./auth/img2.svg)] bg-purple-200 bg-cover bg-center p-4 rounded-2xl w-1/2">
           <img
             src="./auth/left_img.png"
             alt="signup-illustration"
-            className="w-full h-full object-cover rounded-2xl"
+            className="rounded-2xl w-full h-full object-cover"
             loading="lazy"
           />
         </div>
@@ -110,16 +110,16 @@ const SignUp = () => {
         {/* Right Side - Form */}
         <div className="w-full md:w-2/3">
           {/* Sign Up Title and Lazy Loaded Logo */}
-          <div className="flex items-center w-full mb-4">
+          <div className="flex items-center mb-4 w-full">
             <div className="flex-grow">
-              <h2 className="text-2xl text-[#000000] font-bold">Sign Up</h2>
+              <h2 className="font-bold text-[#000000] text-2xl">Sign Up</h2>
             </div>
             <Suspense
               fallback={
-                <div className="w-10 h-10 bg-gray-200 rounded-full animate-pulse"></div>
+                <div className="bg-gray-200 rounded-full w-10 h-10 animate-pulse"></div>
               }
             >
-              <Logo className="h-10 w-auto ml-4" />
+              <Logo className="ml-4 w-auto h-10" />
             </Suspense>
           </div>
 
@@ -138,14 +138,14 @@ const SignUp = () => {
                   value={formData[field.name]}
                   onChange={handleChange}
                   placeholder={field.placeholder}
-                  className="w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="mt-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 w-full"
                   required
                 />
               </div>
             ))}
 
             {/* Role Selection & Profile Upload */}
-            <div className="mb-3 flex items-center gap-6">
+            <div className="flex items-center gap-6 mb-3">
               {/* Radio Buttons */}
               <div className="flex gap-4">
                 {["student", "recruiter"].map((role) => (
@@ -165,21 +165,21 @@ const SignUp = () => {
 
               {/* Profile Upload */}
               <div className="flex items-center gap-1">
-                <label className="text-black font-medium text-sm">
+                <label className="font-medium text-black text-sm">
                   Profile
                 </label>
                 <input
                   type="file"
                   accept=".pdf"
                   onChange={handleFileChange}
-                  className="border rounded px-1 py-0.5 w-28 text-xs"
+                  className="px-1 py-0.5 border rounded w-28 text-xs"
                 />
               </div>
             </div>
 
             <button
               type="submit"
-              className="w-full bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700 cursor-pointer"
+              className="bg-purple-600 hover:bg-purple-700 py-2 rounded-lg w-full text-white cursor-pointer"
             >
               {loading ? "Please wait..." : "Sign Up"}
             </button>
@@ -189,7 +189,7 @@ const SignUp = () => {
             Already have an account?{" "}
             <a
               href="/login"
-              className="text-purple-600 font-semibold cursor-pointer"
+              className="font-semibold text-purple-600 cursor-pointer"
             >
               Login
             </a>
