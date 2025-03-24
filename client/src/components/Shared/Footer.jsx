@@ -2,76 +2,76 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0F0F14] text-white py-10 px-6 relative overflow-hidden mt-20">
+    <footer className="relative bg-[#0F0F14] mt-20 px-6 py-10 overflow-hidden text-white">
       {/* Curved Background Shape on the Right */}
-      <div className="absolute top-0 right-0 w-[50%] h-full bg-[#0F0F14] clip-path-custom"></div>
+      <div className="top-0 right-0 absolute bg-[#0F0F14] w-[50%] h-full clip-path-custom"></div>
 
-      <div className="relative max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
+      <div className="relative gap-8 grid grid-cols-1 md:grid-cols-5 mx-auto max-w-7xl">
         {/* Logo */}
-        <div className="relative z-10">
+        <div className="z-10 relative">
           <img src="/blogo.svg" alt="Brand Logo" />
         </div>
 
         {/* About Section */}
-        <div className="relative z-10">
+        <div className="z-10 relative">
           <h3 className="font-semibold text-lg">About Section</h3>
           <Link
             to="/about"
-            className="block text-gray-400 mt-2 hover:text-white"
+            className="block mt-2 text-gray-400 hover:text-white"
           >
             About Us
           </Link>
         </div>
 
         {/* Navigation Links */}
-        <div className="relative z-10">
+        <div className="z-10 relative">
           <h3 className="font-semibold text-lg">Navigation Links</h3>
-          <Link to="/" className="block text-gray-400 mt-2 hover:text-white">
+          <Link to="/" className="block mt-2 text-gray-400 hover:text-white">
             Home
           </Link>
           <Link
             to="/jobs"
-            className="block text-gray-400 mt-2 hover:text-white"
+            className="block mt-2 text-gray-400 hover:text-white"
           >
             Browse Jobs
           </Link>
           <Link
             to="/admin/jobs"
-            className="block text-gray-400 mt-2 hover:text-white"
+            className="block mt-2 text-gray-400 hover:text-white"
           >
             Post a Job
           </Link>
           <Link
             to="/admin/companies"
-            className="block text-gray-400 mt-2 hover:text-white"
+            className="block mt-2 text-gray-400 hover:text-white"
           >
             Create a Company
           </Link>
         </div>
 
         {/* Tools */}
-        <div className="relative z-10">
+        <div className="z-10 relative">
           <h3 className="font-semibold text-lg">Tools</h3>
-          <p className="text-gray-400 mt-2">React</p>
-          <p className="text-gray-400 mt-2">MongoDB</p>
-          <p className="text-gray-400 mt-2">Express JS</p>
-          <p className="text-gray-400 mt-2">Node JS</p>
-          <p className="text-gray-400 mt-2">Redux</p>
+          <p className="mt-2 text-gray-400">React</p>
+          <p className="mt-2 text-gray-400">MongoDB</p>
+          <p className="mt-2 text-gray-400">Express JS</p>
+          <p className="mt-2 text-gray-400">Node JS</p>
+          <p className="mt-2 text-gray-400">Redux</p>
         </div>
 
         {/* Members */}
-        <div className="relative z-10">
+        <div className="z-10 relative">
           <h3 className="font-semibold text-lg">Members</h3>
-          <p className="text-gray-400 mt-2">Nikhil Kumar</p>
-          <p className="text-gray-400 mt-2">Aditya Mankard</p>
-          <p className="text-gray-400 mt-2">Yash Shinde</p>
-          <p className="text-gray-400 mt-2">Vivek Tiwari</p>
-          <p className="text-gray-400 mt-2">Utkarsh Parihar</p>
+          <p className="mt-2 text-gray-400">kumar</p>
+          <p className="mt-2 text-gray-400">vijay</p>
+          <p className="mt-2 text-gray-400">kavin</p>
+          <p className="mt-2 text-gray-400">prakash</p>
+          <p className="mt-2 text-gray-400">arun</p>
         </div>
       </div>
 
       {/* Social Media Icons */}
-      <div className="mt-6 relative z-10">
+      <div className="z-10 relative mt-6">
         <div className="flex gap-4">
           <img
             src="/social/twitter.svg"
@@ -97,7 +97,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="border-t border-gray-600 mt-6 pt-4 text-gray-400 text-sm flex flex-col md:flex-row justify-between relative z-10">
+      <div className="z-10 relative flex md:flex-row flex-col justify-between mt-6 pt-4 border-gray-600 border-t text-gray-400 text-sm">
         <p>@2025-2030, All rights Reserved</p>
         <div className="flex gap-6 mt-2 md:mt-0">
           <Link to="/privacy-policy" className="hover:text-white">
