@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./redux/store";
 
-import Home from "./pages/Home";
+import Home from "./pages/home";
 import Jobs from "./pages/Jobs";
 import JobDescription from "./components/Jobs/JobDescription";
 import SignUp from "./components/Auth/Signup";
