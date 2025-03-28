@@ -37,9 +37,9 @@ const Hero = () => {
         </p> }
 
         {/* Search Bar and Button Wrapper */}
-        <div className="flex items-center space-x-4 mt-4">
+        <div /* className="flex items-center space-x-4 mt-4" */>
           {/* Search Bar */}
-          <div className="flex flex-grow items-center bg-gray-100 shadow-sm px-4 py-2 rounded-full max-w-[600px]">
+          <div /* className="flex flex-grow items-center bg-gray-100 shadow-sm px-4 py-2 rounded-full max-w-[600px]" */>
             {/* <input
               type="text"
               placeholder="Find your dream jobs"
