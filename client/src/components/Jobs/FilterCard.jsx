@@ -27,7 +27,7 @@ const filterData = [
   },
   {
     filterType: "Salary",
-    array: ["0 - 40k", "42k - 1lakh", "1lakh - 5lakh"],
+    array: ["1lakh - 10lakh", "10lakh - 15lakh", "15lakh - 25lakh"],
   },
 ];
 
@@ -46,8 +46,8 @@ const FilterCard = () => {
   }, [selectedValue, dispatch]);
 
   return (
-    <div className="bg-[#FBF9F5] p-4 rounded-lg shadow-md w-72 mt-25 mb-25 ml-5">
-      <h2 className="text-lg font-semibold">Filter Jobs</h2>
+    <div className="bg-[#FBF9F5] shadow-md mt-25 mb-25 ml-5 p-4 rounded-lg w-72">
+      <h2 className="font-semibold text-lg">Filter Jobs</h2>
       <hr className="my-2" />
 
       {filterData.map((data, index) => (
