@@ -25,10 +25,10 @@ const filterData = [
       "Nextjs Developer",
     ],
   },
-  {
+  /* {
     filterType: "Salary",
     array: ["1lakh - 10lakh", "10lakh - 15lakh", "15lakh - 25lakh"],
-  },
+  }, */
 ];
 
 const FilterCard = () => {
